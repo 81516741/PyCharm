@@ -25,7 +25,13 @@ SECRET_KEY = '=9nclhe#*l6%$mfi8(3dbvazxbd+0je40fp&z@^$!79-k-z56*'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = [
+    '36f32fcc.ngrok.io',
+    u'127.0.0.1',
+    u'service.tunnel.qydev.com',
+    u'service.ngrok.xiaomiqiu.cn',
+    u'0.0.0.0'
+]
 
 
 # Application definition
@@ -40,15 +46,20 @@ INSTALLED_APPS = [
     'ldapp',
 ]
 
+
+CORS_ORIGIN_ALLOW_ALL = True
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
+    'corsheaders.middleware.CorsMiddleware',
     'django.middleware.common.CommonMiddleware',
     # 'django.middleware.csrf.CsrfViewMiddleware',
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
 ]
+
 
 ROOT_URLCONF = 'Django27.urls'
 

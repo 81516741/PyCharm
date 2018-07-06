@@ -5,7 +5,7 @@
     <title>图片上传</title>
 </head>
 <body>
-    <form method="post" action="handlepic" enctype="multipart/form-data">
+    <form method="post" action="webuploadpic" enctype="multipart/form-data">
         {% csrf_token %}
         <input type="text" name="sign"><br>
         <input type="file" name="avatar"/><br>
