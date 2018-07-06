@@ -26,11 +26,9 @@ SECRET_KEY = '=9nclhe#*l6%$mfi8(3dbvazxbd+0je40fp&z@^$!79-k-z56*'
 DEBUG = True
 
 ALLOWED_HOSTS = [
-    '36f32fcc.ngrok.io',
     u'127.0.0.1',
-    u'service.tunnel.qydev.com',
-    u'service.ngrok.xiaomiqiu.cn',
-    u'0.0.0.0'
+    u'0.0.0.0',
+    u'service.tunnel.qydev.com'
 ]
 
 
@@ -44,6 +42,7 @@ INSTALLED_APPS = [
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'ldapp',
+    'testapp',
 ]
 
 
